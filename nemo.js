@@ -1,18 +1,15 @@
-//What is good code?
-/*
-readable
-scalable
-How can we measure the performance of this code?
-*/
-
-const nemo =['nemo'];
-
-function findNemo(array) {
+const name =['LazyInvestor'];
+const {performance} = require('perf_hooks');
+const everyone = ['LazyInvestor','dory','bruce','marlin','gill', 'nigel', 'squirt', 'darla', 'hank'];
+function findName(array) {
   for(let i=0;i<array.length;i++) {
-    if(array[i]==='nemo') {
-      console.log('Found NEMO!');
+      console.log('running');
+    if(array[i]==='LazyInvestor') {
+      console.log('Found it!');
+      break;
     }
   }
 }
 
-findNemo(nemo);
+findName(everyone);
+Big O(n)
